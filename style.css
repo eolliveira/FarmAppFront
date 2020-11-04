@@ -441,10 +441,16 @@ body, h1, p, a, li, ul {
 
 /* ----------------- TELA DE LOGIN ---------------------*/
 
-.logo > img {
+.logo-login {
     display: flex;
-    max-width: 100px;
-    margin: 0 auto;
+    flex-wrap: wrap;
+    width: 300px;
+    justify-content: center;
+    margin: 20px auto;
+}
+
+.img-logo-login {
+    width: 100px;
 }
 
 .caixa-login {
@@ -454,21 +460,26 @@ body, h1, p, a, li, ul {
     border-radius: 10px;
     padding: 20px;
     align-items: center;
+    display: flex;
+    flex-direction: column;
 }
 
 .caixa-login h1 {
     font-size: 30px;
     padding-bottom: 20px;
+    font-family: 'Merriweather Sans', sans-serif;
 }
 
 .sub-titulo-login {
     font-weight: bold;
-    font-size: 1em;
+    font-size: 15px;
+    font-family: 'Merriweather Sans', sans-serif;
+    margin-bottom: 10px;
 }
 
 .login input {
     max-width: 300px;
-    flex-wrap: ;
+    font-family: 'Nunito', sans-serif;
 }
 
 .nova-conta {
@@ -479,14 +490,64 @@ body, h1, p, a, li, ul {
     padding: 10px;
     flex-wrap: wrap;
     align-items: center;
+    font-family: 'Nunito', sans-serif;
+}
+
+.login-email {
+    width: 250px;
+    height: 23px;
+    flex-wrap: wrap;
+}
+
+.botao-continuar {
+    height: 30px;
+    width: 260px;
+    flex-wrap: wrap;
+    margin-top: 15px;
+    border: 1px solid black;
+    background:  rgb(47, 195, 240);
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.botao-continuar:hover {
+    background:  rgb(28, 180, 226);
+}
+
+.termos {
+    margin-top: 15px;
+    font-family: 'Nunito', sans-serif;
+    text-align: left;
+    font-size: 13px;
+}
+
+.caixa-login a {
+    margin-top: 10px;
 }
 
 .nova-conta p {
     margin: 0 auto;
     padding: 10px;
+
 }
 
 .nova-conta input {
     width: 300px;
     margin: 0 auto;
 }
+
+.nova-conta input {
+    height: 30px;
+    width: 260px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    border: 1px solid black;
+    background:  silver;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.nova-conta input:hover {
+    background:  rgb(179, 172, 172);
+}
+
