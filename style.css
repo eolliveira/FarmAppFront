@@ -52,7 +52,7 @@ body, h1, p, a, li, ul {
 .logo-redes-sociais {
     position: absolute;
     width: 90px;
-    top: 112px;
+    top: 123px;
     left: 16px;
 }
 
@@ -68,7 +68,7 @@ body, h1, p, a, li, ul {
 }
 
 .barra-pesquisa input {
-    height: 20px;
+    height: 31px;
     width: 400px;
     border: 3px solid rgb(47, 195, 240);
     padding: 5px;
@@ -128,6 +128,7 @@ body, h1, p, a, li, ul {
     border-left: 1px solid white;
     padding: 10px 32px;
     font-family: 'Nunito', sans-serif;
+    text-decoration: none;
 }
 
 .menu-navegacao a:hover {
@@ -222,6 +223,7 @@ body, h1, p, a, li, ul {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    font-size: 16px;
     flex-direction: column;
     align-items: center;
     border: 1px solid rgb(173, 173, 173);
@@ -282,45 +284,93 @@ body, h1, p, a, li, ul {
     color: white;
 }
 
-
-
-
 /*qualidade*/
 
-.qualidade {
+.qualidade-titulo {
+    display: flex;
+    background: rgb(65, 65, 236);
+    height: 100px;
+    align-items: center;
+}
+
+
+.qualidade-titulo h2 {
+    color: white;
+    font-weight: bold;
+    font-family: 'Nunito', sans-serif;
+    margin-left: 100px;
+    font-size: 3em;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.qualidade-titulo {
+    background: linear-gradient(rgb(65, 65, 236) -11%, rgb(47, 195, 240) 149%);
+}
+
+/* .qualidade {
     max-width: 100%;
-    background: url("fundo-remedios.jpg");
+
     background-repeat: no-repeat;
     margin: 60px auto;
     display: flex;
     align-items: initial;
     flex-wrap: wrap;
     font-family: 'Nunito', sans-serif;
-}
+} */
 
 .qualidade-caixa {
-    max-width: 50%;
-    margin: 0 auto;
+    max-width: 70%;
+    margin: 50px auto;
     flex-wrap: wrap;
-    flex: 1;
-}
-
-.qualidade-caixa h1 {
-    font-size: 3em;
-    padding-bottom: 25px;
-    border-bottom: 2px solid red;
-}
-
-.qualidade-caixa p {
-    font-size: 1.25em;
-    line-height: 1.3em;
-    margin: 10px 30px 0 10px;
 }
 
 .qualidade img {
-    max-width: 50%;
-    flex: 1;
+    width: 100%;
+    height: 100px;
 }
+
+
+
+/* Trabalhe Conosco */
+
+.trabalhe-conosco {
+    display: flex;
+}
+
+.farmacia {
+    max-width: 50%;
+    margin: 10px;
+}
+
+.farmacia h2 {
+    font-size: 4em;
+    margin-bottom: 50px;
+    color: #d43f3a;
+}
+
+
+.entregador {
+    max-width: 50%;
+    margin: 10px;
+}
+
+.entregador h2 {
+    font-size: 4em;
+    margin-bottom: 50px;
+    color: #337ab7;
+}
+
+
+
+
+
+
+
+
+
+
 
 /* CADASTRAR EMAIL */
 
@@ -352,7 +402,7 @@ body, h1, p, a, li, ul {
 }
 
 .inserir-email input {
-    height: 25px;
+    height: 40px;
     width: 400px;
     border: 3px solid rgb(47, 195, 240);
     padding: 5px;
@@ -446,7 +496,7 @@ body, h1, p, a, li, ul {
     flex-wrap: wrap;
     width: 300px;
     justify-content: center;
-    margin: 20px auto;
+    margin: 20px auto
 }
 
 .img-logo-login {
@@ -505,13 +555,14 @@ body, h1, p, a, li, ul {
     flex-wrap: wrap;
     margin-top: 15px;
     border: 1px solid black;
-    background:  rgb(47, 195, 240);
+    background:  #337ab7;
     border-radius: 3px;
     cursor: pointer;
+    color: white;
 }
 
 .botao-continuar:hover {
-    background:  rgb(28, 180, 226);
+    background: #3b8bd1
 }
 
 .termos {
@@ -531,12 +582,12 @@ body, h1, p, a, li, ul {
 
 }
 
-.nova-conta input {
+.nova-conta button {
     width: 300px;
     margin: 0 auto;
 }
 
-.nova-conta input {
+.nova-conta button {
     height: 30px;
     width: 260px;
     flex-wrap: wrap;
@@ -547,7 +598,14 @@ body, h1, p, a, li, ul {
     cursor: pointer;
 }
 
-.nova-conta input:hover {
+.nova-conta a {
+    color: black;
+    text-decoration: none;
+}
+
+.nova-conta button:hover {
     background:  rgb(179, 172, 172);
 }
+
+/* TELA DE CADASTRO DE ENTREGADORES */
 
