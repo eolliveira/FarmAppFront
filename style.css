@@ -1,6 +1,11 @@
 /*TELA PRINCIPAL*/
 
-body, h1, p, a, li, ul {
+body,
+h1,
+p,
+a,
+li,
+ul {
     padding: 0 0 0 0;
     margin: 0 0 0 0;
 }
@@ -11,7 +16,7 @@ body, h1, p, a, li, ul {
     font-size: 1.2em;
     padding: 3px;
     font-family: 'Nunito', sans-serif;
-    flex-wrap: wrap ;
+    flex-wrap: wrap;
 }
 
 .super-info {
@@ -27,6 +32,7 @@ body, h1, p, a, li, ul {
     color: rgb(65, 65, 236);
     text-decoration: none;
 }
+
 
 /* MENU */
 
@@ -64,7 +70,7 @@ body, h1, p, a, li, ul {
 
 .barra-pesquisa {
     display: flex;
-    margin-left: 3em; 
+    margin-left: 3em;
 }
 
 .barra-pesquisa input {
@@ -105,14 +111,16 @@ body, h1, p, a, li, ul {
     color: rgb(47, 195, 240);
 }
 
- /* MENU DE NAVEGAÇÃO */
+
+/* MENU DE NAVEGAÇÃO */
 
 .menu-navegacao-bg {
     height: 40px;
     display: flex;
     justify-content: flex-end;
     flex-wrap: wrap;
-    background: rgb(47, 195, 240);;
+    background: rgb(47, 195, 240);
+    ;
 }
 
 .menu-navegacao {
@@ -137,9 +145,12 @@ body, h1, p, a, li, ul {
     border-top: 1px solid rgb(47, 195, 240);
 }
 
+
 /* PRINCIPAL */
 
+
 /*sobre nos*/
+
 .sobre-nos {
     max-width: 1200px;
     margin: 60px auto;
@@ -172,6 +183,7 @@ body, h1, p, a, li, ul {
     flex: 1;
 }
 
+
 /* DESTAQUES */
 
 .destaques {
@@ -195,6 +207,7 @@ body, h1, p, a, li, ul {
     text-align: center;
     margin: 0 auto;
 }
+
 
 /* produtos */
 
@@ -278,11 +291,11 @@ body, h1, p, a, li, ul {
     content: " |";
 }
 
-
-.produto:hover > .prod-comprar {
+.produto:hover>.prod-comprar {
     background: rgb(65, 65, 236);
     color: white;
 }
+
 
 /*qualidade*/
 
@@ -292,7 +305,6 @@ body, h1, p, a, li, ul {
     height: 100px;
     align-items: center;
 }
-
 
 .qualidade-titulo h2 {
     color: white;
@@ -308,6 +320,7 @@ body, h1, p, a, li, ul {
 .qualidade-titulo {
     background: linear-gradient(rgb(65, 65, 236) -11%, rgb(47, 195, 240) 149%);
 }
+
 
 /* .qualidade {
     max-width: 100%;
@@ -332,7 +345,6 @@ body, h1, p, a, li, ul {
 }
 
 
-
 /* Trabalhe Conosco */
 
 .trabalhe-conosco {
@@ -350,7 +362,6 @@ body, h1, p, a, li, ul {
     color: #d43f3a;
 }
 
-
 .entregador {
     max-width: 50%;
     margin: 10px;
@@ -361,15 +372,6 @@ body, h1, p, a, li, ul {
     margin-bottom: 50px;
     color: #337ab7;
 }
-
-
-
-
-
-
-
-
-
 
 
 /* CADASTRAR EMAIL */
@@ -412,7 +414,7 @@ body, h1, p, a, li, ul {
 
 .inserir-email button {
     background: rgb(47, 195, 240);
-    border: 8px solid rgb(47, 195, 240); 
+    border: 8px solid rgb(47, 195, 240);
     border-radius: 0px;
     color: white;
     font-weight: bold;
@@ -420,12 +422,13 @@ body, h1, p, a, li, ul {
     cursor: pointer;
 }
 
+
 /* RODAPÉ */
 
 .rodape-bg {
     width: 100%;
     height: 500px;
-    background: white;
+    background-color: white
 }
 
 .rodape {
@@ -454,9 +457,8 @@ body, h1, p, a, li, ul {
     font-family: 'Nunito', sans-serif;
 }
 
-
 .alvara {
-    border-top: 1px solid white;
+    border-top: 1px solid rgb(173, 173, 173);
     padding: 30px;
     margin: 30px;
     width: 100%;
@@ -486,8 +488,9 @@ body, h1, p, a, li, ul {
 
 .alvara {
     line-height: 1.2em;
-    font: 12px/1.55 Roboto,Arial,Helvetica,sans-serif;
+    font: 12px/1.55 Roboto, Arial, Helvetica, sans-serif;
 }
+
 
 /* ----------------- TELA DE LOGIN ---------------------*/
 
@@ -555,10 +558,14 @@ body, h1, p, a, li, ul {
     flex-wrap: wrap;
     margin-top: 15px;
     border: 1px solid black;
-    background:  #337ab7;
+    background: #337ab7;
     border-radius: 3px;
     cursor: pointer;
     color: white;
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+    padding-top: 10px;
+    text-decoration: none;
 }
 
 .botao-continuar:hover {
@@ -579,7 +586,6 @@ body, h1, p, a, li, ul {
 .nova-conta p {
     margin: 0 auto;
     padding: 10px;
-
 }
 
 .nova-conta button {
@@ -593,7 +599,7 @@ body, h1, p, a, li, ul {
     flex-wrap: wrap;
     margin-top: 10px;
     border: 1px solid black;
-    background:  silver;
+    background: silver;
     border-radius: 3px;
     cursor: pointer;
 }
@@ -604,8 +610,8 @@ body, h1, p, a, li, ul {
 }
 
 .nova-conta button:hover {
-    background:  rgb(179, 172, 172);
+    background: rgb(179, 172, 172);
 }
 
-/* TELA DE CADASTRO DE ENTREGADORES */
 
+/* TELA DE CADASTRO DE ENTREGADORES */
