@@ -1,72 +1,72 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <link rel="stylesheet" href="style.css">
-        <link href="https://fonts.googleapis.com/css2?
-        family=Nunito:wght@600&display=swap" rel="stylesheet">
-        <title>FarmApp</title>
-        <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-        <link rel="stylesheet" href="bootstrap/js/bootstrap.min.js">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-    </head>
-    <body>
-        <header>
-            <div class="super-info-bg">
-                <div class="super-info">
-                    <p>Entregas: Seg / Sex - 08:00 às 18:00</p>
-                    <a href="tel:+55 44 99999-9999">+55 44 99999-9999</a>
-                </div>
-            </div>
-            <div class="menu-bg">
-                <div class="menu">
-                    <img class="logo" src="logo-cruz-vermelha.png" alt="logo FarmApp">
-                    <h1>FarmApp</h1>
-                    <form class="barra-pesquisa">
-                        <input type="text" placeholder="Busque pelo produto">
-                        <button type="submit">Pesquisar</button>
-                    </form>
-                    <img class="logo-user" src="icone-user-login.png" alt="logo usuario">
-                    <a href="login.html">Entrar</a>
-                </div>
-            </div>
-            <div class="menu-navegacao-bg">
-                <img class="logo-redes-sociais" src="redes-sociais.png" alt="redes sociais">
-                <nav class="menu-navegacao">
-                    <a href="#sobre">Sobre</a>
-                    <a href="#produtos">Produtos</a>
-                    <a href="#trabalhe">FazerParte</a>
-                    <a href="#qualidades">Qualidade</a>
-                </nav>
-            </div>
-        </header>
-        <main>
-            <section class="sobre-nos" id="sobre">
-                <div class="sobre-nos-caixa">
-                    <h1>Sobre nós</h1>
-                    <p>Nosso serviço realiza o gerenciamento de venda e compra de medicamentos de forma facilitada, aberta a qualquer tipo de usuário. Onde o proprietário fará o cadastro de sua drogaria e disponibilizará seus medicamentos para a venda.
-                        Terá também, um cadastro de entregadores. Os entregadores cadastrados e ativos, terá que fazer as entregas que ele aceitar.
-                        O cliente, ao sentir necessidade de comprar alguma medicação,  irá acessar a plataforma web, e fará uma busca pela medicação.
-                        Nosso maior desejo é facilitar a compra e venda de medicamentos, fazendo com que
-                        sua compra chegue o mais rápido possivel até você. 
-                    </p>
-                </div>
-                <img class="img-moto" src="familia.png" alt="entregas rapidas">
-            </section>
 
-            <section class="destaques" id="produtos">
-                <div class="destaques-titulo">
-                    <h2>Destaques</h2>
-                </div>
-                <div id="destaques-produtos" class="destaques-produtos">
-                    <div class="produto">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap" rel="stylesheet">
+    <title>FarmApp</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body onload="listarEstoque()">
+    <header>
+        <div class="super-info-bg">
+            <div class="super-info">
+                <p>Entregas: Seg / Sex - 08:00 às 18:00</p>
+                <a href="tel:+55 44 99999-9999">+55 44 99999-9999</a>
+            </div>
+        </div>
+        <div class="menu-bg">
+            <div class="menu">
+                <img class="logo" src="img/logo-cruz-vermelha.png" alt="logo FarmApp">
+                <h1>FarmApp</h1>
+                <form class="barra-pesquisa">
+                    <input type="text" placeholder="Busque pelo produto">
+                    <button type="submit">Pesquisar</button>
+                </form>
+                <img class="logo-user" src="img/icone-user-login.png" alt="logo usuario">
+                <a href="login.html">Entrar</a>
+            </div>
+        </div>
+        <div class="menu-navegacao-bg">
+            <img class="logo-redes-sociais" src="img/redes-sociais.png" alt="redes sociais">
+            <nav class="menu-navegacao">
+                <a href="#sobre">Sobre</a>
+                <a href="#produtos">Produtos</a>
+                <a href="#trabalhe">FazerParte</a>
+                <a href="#qualidades">Qualidade</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="sobre-nos" id="sobre">
+            <div class="sobre-nos-caixa">
+                <h1>Sobre nós</h1>
+                <p>Nosso serviço realiza o gerenciamento de venda e compra de medicamentos de forma facilitada, aberta a qualquer tipo de usuário. Onde o proprietário fará o cadastro de sua drogaria e disponibilizará seus medicamentos para a venda. Terá
+                    também, um cadastro de entregadores. Os entregadores cadastrados e ativos, terá que fazer as entregas que ele aceitar. O cliente, ao sentir necessidade de comprar alguma medicação, irá acessar a plataforma web, e fará uma busca pela
+                    medicação. Nosso maior desejo é facilitar a compra e venda de medicamentos, fazendo com que sua compra chegue o mais rápido possivel até você.
+                </p>
+            </div>
+            <img class="img-moto" src="img/familia.png" alt="entregas rapidas">
+        </section>
+
+        <section id="produtos">
+            <div class="destaques-titulo">
+                <h2>Produtos</h2>
+            </div>
+
+            <div id="destaques-produtos" class="destaques-produtos">
+                <!-- <div class="produto">
                         <img src="remedio.jpg" alt="img">
                         <p class="prod-remedio">Bisoprol 5mg 30 Comprimidos</p>
                         <p class="prod-farmacia">Mais Saúde</p>
                         <p class="prod-preco">R$ 24,99</p>
                         <p class="prod-comprar">Comprar</p>
-                    </div>
-                    <!-- <div class="produto">
+                    </div> -->
+                <!-- <div class="produto">
                         <img src="remedio-2.jpg" alt="img">
                         <p class="prod-remedio">Dipirona Sódica 500mg Genérico Medley 10 Comprimidos"</p>
                         <p class="prod-farmacia">Droga Mais</p>
@@ -129,181 +129,150 @@
                         <p class="prod-preco">R$ 10,00</p>
                         <p class="prod-comprar">Comprar</p>
                     </div> -->
-                </div>
-            </section>
+            </div>
+        </section>
 
-            <section class="qualidade">
-                <div class="qualidade-titulo" id="qualiidades">
-                    <h2>Qualidade</h2>
-                </div>
-                <div class="qualidade-caixa">
-                    <div class="container">
-                        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-                            <!-- Indicators -->
-                            <ol class="carousel-indicators">
+        <section class="qualidade">
+            <div class="qualidade-titulo" id="qualidades">
+                <h2>Qualidade</h2>
+            </div>
+            <div class="qualidade-caixa">
+                <div class="container">
+                    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators">
                             <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
                             <li data-target="#carousel-example-generic" data-slide-to="1"></li>
                             <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-                            </ol>
-                        
-                            <!-- Wrapper for slides -->
-                            <div class="carousel-inner" role="listbox">
+                        </ol>
+
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner" role="listbox">
                             <div class="item active">
                                 <img class="img-responsive" src="img/img-carrossel/img1.jpg" alt="depoimento 1">
                                 <div class="carousel-caption">
                                     <h3>Facilidade</h3>
-                                    <p>Compre agora e receba em casa com toda comodidade assim como fazem os milhares
-                                    de clientes que atendemos todos os dias, de todo o Brasil. O mundo digital trouxe
-                                    diversos benefícios para as pessoas, como permitir a comunicação instantânea, a 
-                                    realização de tarefas em qualquer lugar e até mesmo a compra de diversos itens sem
-                                    a necessidade de sair de casa.</p>
+                                    <p>Compre agora e receba em casa com toda comodidade assim como fazem os milhares de clientes que atendemos todos os dias, de todo o Brasil. O mundo digital trouxe diversos benefícios para as pessoas, como permitir a comunicação
+                                        instantânea, a realização de tarefas em qualquer lugar e até mesmo a compra de diversos itens sem a necessidade de sair de casa.</p>
                                 </div>
                             </div>
                             <div class="item">
                                 <img class="img-responsive" src="img/img-carrossel/img2.jpg" alt="depoimento 2">
                                 <div class="carousel-caption">
                                     <h3>Portabilidade</h3>
-                                    <p>Os avanços chegaram até as farmácias, nas quais vários medicamentos podem
-                                        ser adquiridos com apenas alguns cliques. Tudo isso garantiu mais praticidade e conforto
-                                        no dia a dia das pessoas, principalmente para quem precisa de medicamentos de uso
-                                        contínuo e dos que não podem faltar no estoque.</p>
+                                    <p>Os avanços chegaram até as farmácias, nas quais vários medicamentos podem ser adquiridos com apenas alguns cliques. Tudo isso garantiu mais praticidade e conforto no dia a dia das pessoas, principalmente para quem precisa
+                                        de medicamentos de uso contínuo e dos que não podem faltar no estoque.</p>
                                 </div>
                             </div>
                             <div class="item">
                                 <img class="img-responsive" src="img/img-carrossel/img3.jpg" alt="depoimento 3">
                                 <div class="carousel-caption">
                                     <h3>Rapidez</h3>
-                                    <p> A FarmApp é uma farmácia online
-                                        que se destaca pelos preços baixos, melhores ofertas e entrega rápida de produtos que
-                                        são importantes na rotina de qualquer pessoa.</p>
+                                    <p> A FarmApp é uma farmácia online que se destaca pelos preços baixos, melhores ofertas e entrega rápida de produtos que são importantes na rotina de qualquer pessoa.</p>
                                 </div>
                             </div>
-                            </div>
-                        
-                            <!-- Controls -->
-                            <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                        </div>
+
+                        <!-- Controls -->
+                        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
                             <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
                             <span class="sr-only">Previous</span>
-                            </a>
-                            <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                        </a>
+                        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
                             <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
                             <span class="sr-only">Next</span>
-                            </a>
-                        </div>
-                </div>
-            </section>
-
-
-            <div class="container">
-                <div class="trabalhe-conosco" id="trabalhe">
-                    <div class="farmacia">
-                        <div class="jumbotron">
-                            <h2>Farmácia e Drogarias</h2>
-                            <h3>Venda mais!</h3>
-
-                            <p>Aumente suas vendas e simplifique suas entregas através do nosso aplicativo.
-                            Nossa plataforma é simples, eficiente e fácil de usar.</p>
-
-                            <p>Com o Farmapp, além de incrementar suas vendas, você ainda garante uma entrega de
-                            qualidade aos clientes, sem se preocupar com atendimento e logística.</p>
-
-                            <p>E além de poder contar com nosso próprio sistema para divulgação, venda e entrega, ainda
-                            podemos fazer o delivery de seus produtos vendidos através de outras plataformas.</p>
-
-                            <p>Seja bem-vindo!</p>
-                            
-                            <p><a class="btn btn-primary btn-lg" href="cadastroFarmacias.html" role="button">Cadastrar-me</a></p>
-                        </div>
-
+                        </a>
                     </div>
-                    <div class="entregador">
-                        <div class="jumbotron">
-                            <h2>Entregadores</h2>
+                </div>
+        </section>
 
-                            <p>Queremos você no time!
+        <div class="container">
+            <div class="trabalhe-conosco" id="trabalhe">
+                <div class="farmacia">
+                    <div class="jumbotron">
+                        <h2>Farmácia e Drogarias</h2>
+                        <h3>Venda mais!</h3>
 
-                            <p>Somos uma empresa que quer prestar um serviço de excelência a nossos usuários e
-                            para isso, precisamos de você.</p>
+                        <p>Aumente suas vendas e simplifique suas entregas através do nosso aplicativo. Nossa plataforma é simples, eficiente e fácil de usar.</p>
 
-                            <p>Mas, para que você seja um parceiro alinhado com a nossa marca, garantimos em
-                            contrapartida um suporte constante e de qualidade, para te ajudar a trabalhar da
-                            melhor maneira possível, com segurança e flexibilidade.</p>
+                        <p>Com o Farmapp, além de incrementar suas vendas, você ainda garante uma entrega de qualidade aos clientes, sem se preocupar com atendimento e logística.</p>
+
+                        <p>E além de poder contar com nosso próprio sistema para divulgação, venda e entrega, ainda podemos fazer o delivery de seus produtos vendidos através de outras plataformas.</p>
+
+                        <p>Seja bem-vindo!</p>
+
+                        <p><a class="btn btn-primary btn-lg" href="cadastroFarmacias.html" role="button">Cadastrar-me</a></p>
+                    </div>
+
+                </div>
+                <div class="entregador">
+                    <div class="jumbotron">
+                        <h2>Entregadores</h2>
+
+                        <p>Queremos você no time!
+
+                            <p>Somos uma empresa que quer prestar um serviço de excelência a nossos usuários e para isso, precisamos de você.</p>
+
+                            <p>Mas, para que você seja um parceiro alinhado com a nossa marca, garantimos em contrapartida um suporte constante e de qualidade, para te ajudar a trabalhar da melhor maneira possível, com segurança e flexibilidade.</p>
 
                             <p>Faça parte do nosso time, temos certeza que você vai nos ajudar a fazer a diferença!</p>
 
                             <p><a class="btn btn-primary btn-lg" href="cadastroEntregadores.html" role="button">Cadastrar-me</a></p>
-                        </div>
-
                     </div>
+
                 </div>
             </div>
+        </div>
 
-
-
-
-
-
-
-            <section class="cadastrar-bg">
-                <img class="cadastro-img" src="img-cadastre-se.jpg" alt="cadastre-se">
-                <div class="cadastrar-email">
-                    <p>Receba as melhores ofertas no seu email</p>
-                    <form class="inserir-email">
-                        <input type="email" placeholder="Informe seu email">
-                        <button type="button">Cadastrar</button>
-                    </form>
-                </div>
+        <section class="cadastrar-bg">
+            <img class="cadastro-img" src="img/img-cadastre-se.jpg" alt="cadastre-se">
+            <div class="cadastrar-email">
+                <p>Receba as melhores ofertas no seu email</p>
+                <form class="inserir-email">
+                    <input type="email" placeholder="Informe seu email">
+                    <button type="button">Cadastrar</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer class="rodape-bg">
+        <div class="rodape">
+            <section class="nos">
+                <h2>Sobre</h2>
+                <p>Premiações</p>
+                <p>Nossos parceiros</p>
+                <p>Conduta e Ética</p>
+                <p>Projetos sociais</p>
+                <p>Campanhas</p>
             </section>
-        </main>
-        <footer class="rodape-bg">
-            <div class="rodape">
-                <section class="nos">
-                    <h2>Sobre</h2>
-                    <p>Premiações</p>
-                    <p>Nossos parceiros</p>
-                    <p>Conduta e Ética</p>
-                    <p>Projetos sociais</p>
-                    <p>Campanhas</p>
-                </section>
-                <section class="ajuda">
-                    <h2>Ajuda</h2>
-                    <p>Acompanhe seu pedido</p>
-                    <p>Politicas de Segurança</p>
-                    <p>Atendimento por email</p>
-                </section>
-                <section class="formas-de-pagamento">
-                    <h2>Formas de pagamento</h2>
-                    <img class="img-forma-pagamento" src="img-pagamentos.jpg" alt="">
-                </section>
-                <section class="alvara">
-                    <p>O nome fantasia FarmApp e os domínios www.farmapp.com.br, www.farmapp.com, www.farmapp.net, 
-                    especialmente, são marcas registradas por: Farmaclub Drogarias Ltda. Rua das Hortênsias, 1204, Jardim do Estádio, Santo André 
-                    /SP, Cep 09175-500, CNPJ: 64.963.044/0001-08, Inscrição Estadual: 626.235.906.110, Alvará de Funcionamento: 488/2009, Autorização 
-                    de Funcionamento ANVISA: 0097497, Licença Sanitária SIVISA: 354780901-477-000188-1-3, Farmacêutica Responsável: Dra. Jaqueline de 
-                    Souza Duarte CRF - SP 75355.</p>
+            <section class="ajuda">
+                <h2>Ajuda</h2>
+                <p>Acompanhe seu pedido</p>
+                <p>Politicas de Segurança</p>
+                <p>Atendimento por email</p>
+            </section>
+            <section class="formas-de-pagamento">
+                <h2>Formas de pagamento</h2>
+                <img class="img-forma-pagamento" src="img/img-pagamentos.jpg" alt="">
+            </section>
+            <section class="alvara">
+                <p>O nome fantasia FarmApp e os domínios www.farmapp.com.br, www.farmapp.com, www.farmapp.net, especialmente, são marcas registradas por: Farmaclub Drogarias Ltda. Rua das Hortênsias, 1204, Jardim do Estádio, Santo André /SP, Cep 09175-500,
+                    CNPJ: 64.963.044/0001-08, Inscrição Estadual: 626.235.906.110, Alvará de Funcionamento: 488/2009, Autorização de Funcionamento ANVISA: 0097497, Licença Sanitária SIVISA: 354780901-477-000188-1-3, Farmacêutica Responsável: Dra. Jaqueline
+                    de Souza Duarte CRF - SP 75355.</p>
 
-                    <p>Os medicamentos sob prescrição médica só serão dispensados mediante a apresentação da receita médica, a qual deverá ser apresentada 
-                    pelo e-mail: televendas01@farmapp.com</p>
+                <p>Os medicamentos sob prescrição médica só serão dispensados mediante a apresentação da receita médica, a qual deverá ser apresentada pelo e-mail: televendas01@farmapp.com</p>
 
-                    <p>Todo o conteúdo deste site é de propriedade da FarmApp Ltda. É expressamente proibida a reprodução total ou parcial, mesmo 
-                    citando a fonte.</p>
+                <p>Todo o conteúdo deste site é de propriedade da FarmApp Ltda. É expressamente proibida a reprodução total ou parcial, mesmo citando a fonte.</p>
 
-                    <p>© Copyright 2020 - Farmadelivery - Todos os Direitos Reservados.</p>
-                </section>
-            </div>
-        </footer>
+                <p>© Copyright 2020 - Farmadelivery - Todos os Direitos Reservados.</p>
+            </section>
+        </div>
+    </footer>
 
-        <!-- <script type="text/javascript"> //emite alerta na inicialização da pagina - js interno
-            alert('meu primeiro programa js');
-        </script> -->
+    <script src="jquery.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="javascript.js"></script>
+</body>
 
-
-
-        <script type="text/javascript" src="javascript.js"></script>
-        <script src="jquery.js"></script>
-        <script src="bootstrap/js/bootstrap.min.js"></script>
-        <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    </body>
-</html> -->
+</html>

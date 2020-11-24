@@ -184,7 +184,7 @@ ul {
 }
 
 
-/* DESTAQUES */
+/* PRODUTOS */
 
 .destaques {
     background: rgb(233, 233, 233);
@@ -211,9 +211,9 @@ ul {
 
 /* produtos */
 
-.destaques img {
+.destaquesImg {
     max-width: 80%;
-    margin: 20px;
+    margin: 40px;
 }
 
 .destaques-titulo {
@@ -320,18 +320,6 @@ ul {
 .qualidade-titulo {
     background: linear-gradient(rgb(65, 65, 236) -11%, rgb(47, 195, 240) 149%);
 }
-
-
-/* .qualidade {
-    max-width: 100%;
-
-    background-repeat: no-repeat;
-    margin: 60px auto;
-    display: flex;
-    align-items: initial;
-    flex-wrap: wrap;
-    font-family: 'Nunito', sans-serif;
-} */
 
 .qualidade-caixa {
     max-width: 70%;
@@ -612,6 +600,3 @@ ul {
 .nova-conta button:hover {
     background: rgb(179, 172, 172);
 }
-
-
-/* TELA DE CADASTRO DE ENTREGADORES */
